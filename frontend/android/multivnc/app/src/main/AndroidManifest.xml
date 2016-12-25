@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.coboltforge.dontmind.multivnc" android:installLocation="auto"
+    android:versionCode="42" android:versionName="1.6.4">
+
+    <uses-sdk android:minSdkVersion="5" android:targetSdkVersion="13"></uses-sdk>
+	<supports-screens android:anyDensity="true" />
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
+
+    <application android:icon="@drawable/icon" android:label="MultiVNC" android:hardwareAccelerated="true">
+
+		<activity android:label="@string/app_name"
+		          android:name="MainMenuActivity"
+		    	  >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category android:name="android.intent.category.LAUNCHER"></category>
+			</intent-filter>
+		</activity>
+		<activity android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:name="VncCanvasActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+			</intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="vnc" />
+            </intent-filter>
+		</activity>
+       <activity android:name=".ConnectionListActivity"
+                 android:label="@string/shortcut_label"
+                 >
+        	<intent-filter>
+        		<action android:name="android.intent.action.CREATE_SHORTCUT" />
+        		<category android:name="android.intent.category.DEFAULT" />
+        	</intent-filter>
+        </activity>
+
+        <activity android:name="EditBookmarkActivity"
+            android:label="@string/editbookmark_title"
+            >
+       	</activity>
+
+        <activity android:name="AboutActivity"
+             android:label="@string/about"
+             >
+		</activity>
+
+         <activity android:name="HelpActivity"
+             android:label="@string/help"
+             >
+		</activity>
+
+        <service
+            android:enabled="true"
+            android:name=".MDNSService" >
+        </service>
+
+        <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+	</application>
+
+</manifest>

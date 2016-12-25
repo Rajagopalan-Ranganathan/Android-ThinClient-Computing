@@ -1,0 +1,135 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .gitignore
+* .idea/
+* .idea/android.iml
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/workspace.xml
+* TODO.txt
+* default.properties
+* out/
+* out/production/
+* out/production/android/
+* out/production/android/drawable-hdpi/
+* out/production/android/drawable-hdpi/btn_zoom_down_disabled.9.png
+* out/production/android/drawable-hdpi/btn_zoom_down_disabled_focused.9.png
+* out/production/android/drawable-hdpi/btn_zoom_down_normal.9.png
+* out/production/android/drawable-hdpi/btn_zoom_down_pressed.9.png
+* out/production/android/drawable-hdpi/btn_zoom_down_selected.9.png
+* out/production/android/drawable-hdpi/btn_zoom_up_disabled.9.png
+* out/production/android/drawable-hdpi/btn_zoom_up_disabled_focused.9.png
+* out/production/android/drawable-hdpi/btn_zoom_up_normal.9.png
+* out/production/android/drawable-hdpi/btn_zoom_up_pressed.9.png
+* out/production/android/drawable-hdpi/btn_zoom_up_selected.9.png
+* out/production/android/drawable-hdpi/icon.png
+* out/production/android/drawable-mdpi/
+* out/production/android/drawable-mdpi/btn_zoom_down_disabled.9.png
+* out/production/android/drawable-mdpi/btn_zoom_down_disabled_focused.9.png
+* out/production/android/drawable-mdpi/btn_zoom_down_normal.9.png
+* out/production/android/drawable-mdpi/btn_zoom_down_pressed.9.png
+* out/production/android/drawable-mdpi/btn_zoom_down_selected.9.png
+* out/production/android/drawable-mdpi/btn_zoom_up_disabled.9.png
+* out/production/android/drawable-mdpi/btn_zoom_up_disabled_focused.9.png
+* out/production/android/drawable-mdpi/btn_zoom_up_normal.9.png
+* out/production/android/drawable-mdpi/btn_zoom_up_pressed.9.png
+* out/production/android/drawable-mdpi/btn_zoom_up_selected.9.png
+* out/production/android/drawable/
+* out/production/android/drawable/btn_zoom_down.xml
+* out/production/android/drawable/btn_zoom_down_disabled.9.png
+* out/production/android/drawable/btn_zoom_down_disabled_focused.9.png
+* out/production/android/drawable/btn_zoom_down_normal.9.png
+* out/production/android/drawable/btn_zoom_down_pressed.9.png
+* out/production/android/drawable/btn_zoom_down_selected.9.png
+* out/production/android/drawable/btn_zoom_up.xml
+* out/production/android/drawable/btn_zoom_up_disabled.9.png
+* out/production/android/drawable/btn_zoom_up_disabled_focused.9.png
+* out/production/android/drawable/btn_zoom_up_normal.9.png
+* out/production/android/drawable/btn_zoom_up_pressed.9.png
+* out/production/android/drawable/btn_zoom_up_selected.9.png
+* out/production/android/drawable/icon.png
+* out/production/android/drawable/keyboard.png
+* out/production/android/drawable/love.png
+* out/production/android/drawable/mouse_icon.png
+* out/production/android/drawable/paypal_button.png
+* out/production/android/drawable/refresh.png
+* out/production/android/drawable/specialkeys.png
+* out/production/android/drawable/touchpad.png
+* out/production/android/help.html
+* out/production/android/help_files/
+* out/production/android/help_files/ic_menu_save.png
+* out/production/android/layout-xlarge-land/
+* out/production/android/layout-xlarge-land/main.xml
+* out/production/android/layout/
+* out/production/android/layout/about.xml
+* out/production/android/layout/bookmarks_element.xml
+* out/production/android/layout/bookmarks_list_item.xml
+* out/production/android/layout/canvas.xml
+* out/production/android/layout/connection_list.xml
+* out/production/android/layout/discovered_servers_element.xml
+* out/production/android/layout/discovered_servers_list_item.xml
+* out/production/android/layout/editbookmarks.xml
+* out/production/android/layout/help.xml
+* out/production/android/layout/importexport.xml
+* out/production/android/layout/main.xml
+* out/production/android/layout/metakey.xml
+* out/production/android/layout/new_conn_element.xml
+* out/production/android/layout/repeater_dialog.xml
+* out/production/android/layout/zoom_controls.xml
+* out/production/android/menu/
+* out/production/android/menu/mainmenuactivitymenu.xml
+* out/production/android/menu/vnccanvasactivitymenu.xml
+* out/production/android/values-fr/
+* out/production/android/values-fr/strings.xml
+* out/production/android/values-it/
+* out/production/android/values-it/strings.xml
+* out/production/android/values-ja/
+* out/production/android/values-ja/strings.xml
+* out/production/android/values-zh/
+* out/production/android/values-zh/strings.xml
+* out/production/android/values/
+* out/production/android/values/colours.xml
+* out/production/android/values/strings.xml
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/GoogleAdMobAdsSdk-6.3.1.jar => app/libs/GoogleAdMobAdsSdk-6.3.1.jar
+* libs/com.antlersoft.android.contentxml.jar => app/libs/com.antlersoft.android.contentxml.jar
+* libs/com.antlersoft.android.db.jar => app/libs/com.antlersoft.android.db.jar
+* libs/jmdns.jar => app/libs/jmdns.jar
+* lint.xml => app/lint.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/.DS_Store => app/src/main/resources/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

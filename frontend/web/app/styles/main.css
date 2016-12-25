@@ -1,0 +1,136 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.vm {
+  background-color:#aaa;
+}
+
+.vm nav {
+  height: 42px !important;
+  line-height: 42px !important;
+  background: #26a69a;
+  position: relative;
+  z-index: 3;
+}
+
+.vm nav ul span {
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.login, .dashboard, .register {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.login .hint, .register .hint {
+  color: #aaa;
+}
+
+.login-error, .dashboard-error {
+  color: red;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+#db-spinner-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(0,0,0,0.5);
+  display: none;
+
+}
+
+.spinner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.location-info {
+  color: #aaa;
+}
+
+#noVNC_container {
+  display: table;
+  width:100%;
+  height:100%;
+  /*border-top-left-radius: 800px 600px;*/
+}
+
+#noVNC_status {
+  padding: 0 15px;
+}
+
+#vm-spinner-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+}
+
+.spinner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Do not set width/height for VNC_canvas or incorrect
+ * scaling will occur. Canvas size depends on remote VNC
+ * settings and noVNC settings. */
+#noVNC_canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
